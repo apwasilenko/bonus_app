@@ -1,7 +1,8 @@
 import React from 'react';
-import '../css/Header.css'
-
+import '../css/Header.css';
+import CanvasDraw from './CanvasDraw';
 const Header = () => {
+
   return (
     <div className='header'>
       <div className='header-block'>
@@ -32,6 +33,7 @@ const Header = () => {
           -
         </div>
       </div>
+      <CanvasDraw />
     </div>
   )
 }
