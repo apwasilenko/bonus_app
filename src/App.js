@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <PostList posts={posts} />
+      {/* <PostList posts={posts} /> */}
     </div>
   );
 }
