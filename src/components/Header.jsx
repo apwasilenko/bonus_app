@@ -1,6 +1,8 @@
 import React from 'react';
 import '../css/Header.css';
 import CanvasDraw from './CanvasDraw';
+
+
 const Header = () => {
 
   return (
@@ -33,6 +35,7 @@ const Header = () => {
           -
         </div>
       </div>
+
       <CanvasDraw />
     </div>
   )
