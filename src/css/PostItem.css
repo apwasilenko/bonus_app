@@ -1,0 +1,74 @@
+.post {
+  display: flex;
+  padding: 5px;
+  border: 2px solid teal;
+  margin: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post__content{
+    display: flex;
+}
+
+.post_elem{
+    display: block;
+    margin: auto;
+}
+
+.num_zakaz{
+    display: block;
+    margin: auto;
+    width: 20px;
+}
+
+.time_zakaz{
+    display: block;
+    margin: auto;
+    width: 50px;
+}
+
+.date_zakaz{
+    display: block;
+    margin: auto;
+    width: 110px;
+}
+
+.dist_zakaz{
+    display: block;
+    margin: auto;
+    width: 100px;
+}
+
+
+.vremy_zakaz{
+    display: block;
+    margin: auto;
+    width: 80px;
+}
+
+.summ_zakaz{
+    display: block;
+    margin: auto;
+    width: 90px;
+}
+
+.comis_zakaz{
+    display: block;
+    margin: auto;
+    width: 90px;
+}
+
+
+
+#left{
+    text-align: left;
+}
+
+#right{
+    text-align: right;
+}
+
+#center{
+    text-align: center;
+}

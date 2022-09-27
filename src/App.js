@@ -1,27 +1,20 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import PostList from './components/PostList';
+import CanvasDraw from './components/CanvasDraw';
 import './css/App.css';
 
 function App() {
   const [posts] = useState([
-    { id: 1, title: 'JavaScript', body: 'Javascript это мой любимый язык програмирования 1' },
-    { id: 2, title: 'JavaScript 2', body: 'Javascript это мой любимый язык програмирования 2' },
-    { id: 3, title: 'JavaScript 3', body: 'Javascript это мой любимый язык програмирования 3' },
-    { id: 4, title: 'JavaScript 4', body: 'Javascript это мой любимый язык програмирования 4' },
-    { id: 5, title: 'JavaScript 5', body: 'Javascript это мой любимый язык програмирования 5' },
-    { id: 6, title: 'JavaScript 7', body: 'Javascript это мой любимый язык програмирования 6' },
-    { id: 1, title: 'JavaScript', body: 'Javascript это мой любимый язык програмирования 1' },
-    { id: 2, title: 'JavaScript 2', body: 'Javascript это мой любимый язык програмирования 2' },
-    { id: 3, title: 'JavaScript 3', body: 'Javascript это мой любимый язык програмирования 3' },
-    { id: 4, title: 'JavaScript 4', body: 'Javascript это мой любимый язык програмирования 4' },
-    { id: 5, title: 'JavaScript 5', body: 'Javascript это мой любимый язык програмирования 5' },
-    { id: 6, title: 'JavaScript 7', body: 'Javascript это мой любимый язык програмирования 6' },
+    { num: 1, time: '12:23', date:'22.09.2022', distance:'1.2', vremy:'3', summa:'90', comis:'9', },
+    { num: 2, time: '12:33', date:'22.09.2022', distance:'12.2', vremy:'12', summa:'200', comis:'30', },
+    { num: 3, time: '12:42', date:'22.09.2022', distance:'124.2', vremy:'134', summa:'2 380', comis:'119', },
   ])
   return (
     <div className="App">
       <Header />
       <PostList posts={posts} />
+      <CanvasDraw />
     </div>
   );
 }
