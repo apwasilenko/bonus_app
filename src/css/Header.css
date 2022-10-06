@@ -1,53 +1,55 @@
-.header{
+.header {
   background-color: aqua;
   width: 100%;
   margin: auto;
   text-align: center;
 }
 
-.md1{
+.md1 {
   margin: auto;
   display: inline-block;
-  width: 100px;
+  width: 60px;
   vertical-align: middle;
 }
 
-.md2{
+.md2 {
   margin: auto;
   display: inline-block;
-  width: 150px;
+  width: 120px;
 }
 
-.md3{
+.md3 {
   margin: auto;
   display: inline-block;
-  width: 150px;
+  width: 90px;
 }
 
-.md4{
+.md4 {
   margin: auto;
   display: inline-block;
-  width: 130px;
+  width: 70px;
 }
 
-.md5{
+.md5 {
   margin: auto;
   display: inline-block;
-  width: 170px;
+  width: 100px;
+  background-color: brown;
 }
 
-#left{
+#left {
   text-align: left;
 }
 
-#right{
-  text-align: right; 
+#right {
+  text-align: right;
 }
-#center{
+
+#center {
   text-align: center;
 }
 
-.mydiv1{
+.mydiv1 {
   margin: auto;
   display: block;
 }
