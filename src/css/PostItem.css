@@ -19,7 +19,8 @@
 .num_zakaz{
     display: block;
     margin: auto;
-    width: 20px;
+    width: 35px;
+    
 }
 
 .time_zakaz{
@@ -31,32 +32,33 @@
 .date_zakaz{
     display: block;
     margin: auto;
-    width: 110px;
+    width: 85px;
 }
 
 .dist_zakaz{
     display: block;
     margin: auto;
-    width: 100px;
+    width: 75px;
 }
 
 
 .vremy_zakaz{
     display: block;
     margin: auto;
-    width: 80px;
+    width: 70px;
 }
 
 .summ_zakaz{
     display: block;
     margin: auto;
-    width: 90px;
+    width: 80px;
 }
 
 .comis_zakaz{
     display: block;
     margin: auto;
-    width: 90px;
+    width: 70px;
+    background-color: brown;
 }
 
 

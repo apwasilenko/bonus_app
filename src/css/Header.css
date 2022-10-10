@@ -15,7 +15,8 @@
 .md2 {
   margin: auto;
   display: inline-block;
-  width: 120px;
+  width: 90px;
+  /* background-color: brown; */
 }
 
 .md3 {
@@ -34,7 +35,6 @@
   margin: auto;
   display: inline-block;
   width: 100px;
-  background-color: brown;
 }
 
 #left {

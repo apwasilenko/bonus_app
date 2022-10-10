@@ -37,10 +37,10 @@ const Header = () => {
       <div id="right" class="md3">320 км</div>
       <div id="right" class="md4">312 ₽</div>
       <div id="center" class="md5">1 889 ₽</div>
-      <div class="mydiv1"></div>
+      {/* <div class="mydiv1"></div>
       <div>Ширина окна - {mywidth}</div>
       <div>Высота окна - {myheight}</div>
-      <button onClick={setStates}>Вычислить</button>
+      <button onClick={setStates}>Вычислить</button> */}
     </div>
 
   )
