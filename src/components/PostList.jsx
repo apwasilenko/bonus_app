@@ -3,11 +3,13 @@ import Postitem from './PostItem';
 
 const PostList = ({ posts }) => {
   return (
-    <div>
+    <div className='PostList'>
       <h1 style={{ textAlign: 'center' }}>Список заказов</h1>
-      {posts.map(post =>
-        <Postitem post={post} key={post.id} />
-      )}
+      <div className='Spisok'>
+        {posts.map(post =>
+          <Postitem post={post} key={post.id} />
+        )}
+      </div>
     </div>
   );
 };
