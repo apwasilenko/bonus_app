@@ -6,9 +6,11 @@
 
 #root {
   display: flex;
-  justify-content: center;
+  justify-content: center; /*Горизонтальное выравнивание  */
+  width: 100vw;
 }
 
 .App {
+  display: inline;
   max-width: 525px;
 }
