@@ -5,13 +5,12 @@
 }
 
 #root {
-  display: flex;
-  width: 980px;
+  text-align: center;
 }
 
 .App {
-  display: block;
-  justify-items: center;
+  display: inline-block;
+  width: 950px;
 }
 
 .Spisok {
