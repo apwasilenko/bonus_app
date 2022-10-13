@@ -6,13 +6,12 @@
 
 #root {
   display: flex;
-  width: 100%;
+  width: 980px;
 }
 
 .App {
   display: block;
   justify-items: center;
-  width: 980px;
 }
 
 .Spisok {
