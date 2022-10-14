@@ -19,33 +19,38 @@
 .num_zakaz{
     display: block;
     margin: auto;
-    width: 35px;
-    
+    width: 60px;
+    font-size: 30px;
 }
 
 .time_zakaz{
     display: block;
     margin: auto;
-    width: 50px;
+    width: 80px;
+    font-size: 30px;
 }
 
 .date_zakaz{
     display: block;
     margin: auto;
-    width: 85px;
+    width: 160px;
+    font-size: 30px;
 }
 
 .dist_zakaz{
     display: block;
     margin: auto;
-    width: 75px;
+    width: 140px;
+    font-size: 30px;
 }
 
 
 .vremy_zakaz{
     display: block;
     margin: auto;
-    width: 70px;
+    width: 120px;
+    font-size: 30px;
+    background-color: brown;
 }
 
 .summ_zakaz{
@@ -58,7 +63,6 @@
     display: block;
     margin: auto;
     width: 70px;
-    background-color: brown;
 }
 
 
