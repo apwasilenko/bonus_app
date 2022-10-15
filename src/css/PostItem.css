@@ -1,80 +1,85 @@
 .post {
-  display: flex;
-  padding: 5px;
-  border: 2px solid teal;
-  margin: 5px;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    padding: 5px;
+    border: 2px solid teal;
+    margin: 5px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.post__content{
+.post__content {
     display: flex;
 }
 
-.post_elem{
-    display: block;
+.post_elem {
+    display: inline;
     margin: auto;
+    font-size: 30px;
 }
 
-.num_zakaz{
+.num_zakaz {
     display: block;
     margin: auto;
     width: 60px;
-    font-size: 30px;
 }
 
-.time_zakaz{
+.time_zakaz {
     display: block;
     margin: auto;
-    width: 80px;
-    font-size: 30px;
+    width: 180px;
 }
 
-.date_zakaz{
+.date_zakaz {
     display: block;
     margin: auto;
-    width: 160px;
-    font-size: 30px;
+    width: 180px;
 }
 
-.dist_zakaz{
+.dist_zakaz {
+    display: inline-block;
+    margin: auto;
+    width: 100px;
+}
+
+
+.vremy_zakaz {
+    display: inline-block;
+    margin: auto;
+    width: 100px;
+}
+
+.ed_izm {
+    display: inline-block;
+    margin: auto;
+    width: 50px;
+}
+
+.perenos {
     display: block;
     margin: auto;
-    width: 140px;
-    font-size: 30px;
+    width: 150px;
 }
 
-
-.vremy_zakaz{
+.summ_zakaz {
     display: block;
     margin: auto;
-    width: 120px;
-    font-size: 30px;
-    background-color: brown;
+    width: 170px;
 }
 
-.summ_zakaz{
+.comis_zakaz {
     display: block;
     margin: auto;
-    width: 80px;
+    width: 170px;
 }
 
-.comis_zakaz{
-    display: block;
-    margin: auto;
-    width: 70px;
-}
-
-
-
-#left{
+#left {
     text-align: left;
 }
 
-#right{
+#right {
     text-align: right;
 }
 
-#center{
+#center {
     text-align: center;
 }
