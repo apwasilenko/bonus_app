@@ -14,7 +14,7 @@
 .post_elem {
     display: inline;
     margin: auto;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .num_zakaz {
@@ -26,50 +26,75 @@
 .time_zakaz {
     display: block;
     margin: auto;
-    width: 180px;
+    width: 160px;
 }
 
 .date_zakaz {
     display: block;
     margin: auto;
-    width: 180px;
+    width: 160px;
 }
 
 .dist_zakaz {
     display: inline-block;
     margin: auto;
-    width: 100px;
+    width: 70px;
 }
 
 
 .vremy_zakaz {
     display: inline-block;
     margin: auto;
-    width: 100px;
+    width: 70px;
 }
 
 .ed_izm {
     display: inline-block;
     margin: auto;
-    width: 50px;
+    padding-left: 10px;
+    width: 80px;
 }
 
 .perenos {
     display: block;
     margin: auto;
-    width: 150px;
+    width: 10px;
 }
 
 .summ_zakaz {
     display: block;
     margin: auto;
-    width: 170px;
+    width: 150px;
 }
 
 .comis_zakaz {
     display: block;
     margin: auto;
-    width: 170px;
+    width: 150px;
+}
+
+.form_zakaz {
+    display: block;
+    margin: auto;
+    width: 140px;
+}
+
+.tarif_zakaz {
+    display: block;
+    margin: auto;
+    width: 120px;
+}
+
+.avto_zakaz {
+    display: block;
+    margin: auto;
+    width: 40px;
+}
+
+.zvez_zakaz {
+    display: block;
+    margin: auto;
+    width: 40px;
 }
 
 #left {
