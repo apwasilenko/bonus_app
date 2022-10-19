@@ -24,7 +24,7 @@ const CanvasComponent = props => {
     }
   }, [draw]);
 
-  return <canvas ref={canvasRef} {...props} />
+  return <canvas ref={canvasRef} />
 }
 
 export default CanvasComponent

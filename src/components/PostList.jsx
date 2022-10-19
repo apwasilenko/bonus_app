@@ -7,7 +7,7 @@ const PostList = ({ posts }) => {
       <h1 style={{ textAlign: 'center' }}>Список заказов</h1>
       <div className='Spisok'>
         {posts.map(post =>
-          <Postitem post={post} key={post.id} />
+          <Postitem post={post} key={post.key} />
         )}
       </div>
     </div>

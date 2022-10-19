@@ -3,7 +3,6 @@ import '../css/Header.css';
 
 
 const Header = (props) => {
-  console.log(props);
   return (
     <div className="header">
       <div id="left" className="md1"></div>

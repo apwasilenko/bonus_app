@@ -12,7 +12,7 @@ const CanvasDraw = () => {
   }
 
   return (
-    <div><CanvasComponent draw={draw} /></div>
+    <div className="CanvasComponent" ><CanvasComponent draw={draw} /></div>
   )
 }
 
