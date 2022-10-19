@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../css/Header.css';
 
 
-const Header = () => {
+const Header = (props) => {
+  console.log(props);
   return (
     <div class="header">
       <div id="left" className="md1"></div>
@@ -12,22 +13,22 @@ const Header = () => {
       <div id="center" className="md5">Автомобиль</div>
       <div class="mydiv1"></div>
       <div id="left" className="md1">Начало</div>
-      <div id="center" className="md2">7:45 06.09.2022</div>
-      <div id="right" className="md3">602 457 км</div>
-      <div id="right" className="md4">10 789 ₽</div>
-      <div id="center" className="md5">889 ₽</div>
+      <div id="center" className="md2">{props.heads.datatimehome}</div>
+      <div id="right" className="md3">{props.heads.odehome} км</div>
+      <div id="right" className="md4">{props.heads.balanshome} ₽</div>
+      <div id="center" className="md5">{props.heads.auto} ₽</div>
       <div class="mydiv1"></div>
       <div id="left" className="md1">Конец</div>
-      <div id="cener" className="md2">16:45 06.09.2022</div>
-      <div id="right" className="md3">602 777 км</div>
-      <div id="right" className="md4">10 389 ₽</div>
+      <div id="cener" className="md2">{props.heads.datatimeend}</div>
+      <div id="right" className="md3">{props.heads.odeend} км</div>
+      <div id="right" className="md4">{props.heads.balansend} ₽</div>
       <div id="center" className="md5">Доход</div>
       <div class="mydiv1"></div>
       <div id="left" className="md1">ИТОГО</div>
-      <div id="center" className="md2">10:05</div>
-      <div id="right" className="md3">320 км</div>
-      <div id="right" className="md4">312 ₽</div>
-      <div id="center" className="md5">1 889 ₽</div>
+      <div id="center" className="md2">{props.heads.datatime}</div>
+      <div id="right" className="md3">{props.heads.ode} км</div>
+      <div id="right" className="md4">{props.heads.balans} ₽</div>
+      <div id="center" className="md5">{props.heads.doxod} ₽</div>
       <div class="mydiv1"></div>
     </div>
 
