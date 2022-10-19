@@ -29,9 +29,6 @@ function App() {
     { key: 15, num: 111, time: '12:42', date: '22.09.2022', distance: '124.2', vremy: '134', summa: '2 380', comis: '119', form: 'Сбербанк', tarif: 'Бонус город', avto: '1', zvez: '3', },
   ]);
 
-
-
-
   return (
     <div className="App">
       <Header heads={heads} />
@@ -42,6 +39,3 @@ function App() {
 }
 
 export default App;
-
-
-
