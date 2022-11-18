@@ -40,11 +40,8 @@ function App() {
   }
 
   function getMySql() {
-    console.log('Get MySql');
-
-
     let xhr_temper = new XMLHttpRequest();  																											// 1. Создаём новый XMLHttpRequest-объект
-    xhr_temper.open('GET', 'http://f0659051.xsph.ru/php/mysqlapi.json.php');																									// 2. Настраиваем его: GET-запрос по URL /article/.../load
+    xhr_temper.open('GET', 'http://f0659051.xsph.ru/api/mysqlapi.php');																									// 2. Настраиваем его: GET-запрос по URL /article/.../load
     xhr_temper.send();																																						// 3. Отсылаем запрос
     xhr_temper.onload = function () {																															// 4. Этот код сработает после того, как мы получим ответ сервера
       if (xhr_temper.status != 200) {			 																												// анализируем HTTP-статус ответа, если статус не 200, то произошла ошибка
@@ -52,6 +49,7 @@ function App() {
       } else {																																										// если всё прошло гладко, выводим результат
         console.log(`Готово, получили ${xhr_temper.response.length} байт`); 	// response -- это ответ сервера
         let temperatura = JSON.parse(xhr_temper.response);
+        console.log(xhr_temper.response);
         console.log(temperatura);
       }
     }
