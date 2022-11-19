@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import Header from './components/Header';
 import PostList from './components/PostList';
-import CanvasDraw from './components/CanvasDraw';
 import MyModal from './components/UI/MyModal/MyModal';
-import MyButton from './components/UI/button/MyButton'
+import MyButton from './components/UI/button/MyButton';
 import './css/App.css';
-import MySql from 'mysql';
-
+import * as MyFunction from './components/MyFunction.js';
 
 function App() {
 
@@ -39,26 +37,10 @@ function App() {
     setModal(false);
   }
 
-  function getMySql() {
-    let xhr_temper = new XMLHttpRequest();  																											// 1. Создаём новый XMLHttpRequest-объект
-    xhr_temper.open('GET', 'http://f0659051.xsph.ru/api/mysqlapi.php');																									// 2. Настраиваем его: GET-запрос по URL /article/.../load
-    xhr_temper.send();																																						// 3. Отсылаем запрос
-    xhr_temper.onload = function () {																															// 4. Этот код сработает после того, как мы получим ответ сервера
-      if (xhr_temper.status != 200) {			 																												// анализируем HTTP-статус ответа, если статус не 200, то произошла ошибка
-        console.log(`Ошибка ${xhr_temper.status}: ${xhr_temper.statusText}`); 										// Например, 404: Not Found
-      } else {																																										// если всё прошло гладко, выводим результат
-        console.log(`Готово, получили ${xhr_temper.response.length} байт`); 	// response -- это ответ сервера
-        let temperatura = JSON.parse(xhr_temper.response);
-        console.log(xhr_temper.response);
-        console.log(temperatura);
-      }
-    }
-  }
-
   return (
     <div className="App">
 
-      <MyButton style={{ marginTop: 30 }} onClick={() => getMySql()} >MySql</MyButton>
+      <MyButton style={{ marginTop: 30 }} onClick={() => MyFunction.getMySql()} >MySql</MyButton>
       <MyButton style={{ marginTop: 30 }} onClick={() => setModal(true)} >
         Создать пост
       </MyButton>
