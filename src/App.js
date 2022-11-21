@@ -37,10 +37,16 @@ function App() {
     setModal(false);
   }
 
+    var data = {
+    name: 'Виктор',
+    surname: 'Цой',
+    myuser: 'ANTON',
+  };
+
   return (
     <div className="App">
 
-      <MyButton style={{ marginTop: 30 }} onClick={() => MyFunction.getMySql()} >MySql</MyButton>
+      <MyButton style={{ marginTop: 30 }} onClick={() => MyFunction.getMySql(data)} >MySql</MyButton>
       <MyButton style={{ marginTop: 30 }} onClick={() => setModal(true)} >
         Создать пост
       </MyButton>

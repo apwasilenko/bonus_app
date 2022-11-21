@@ -1,22 +1,9 @@
-export function getMySql() {
-  var data = {
-    name: 'Виктор',
-    surname: 'Цой',
-    myuser: 'ANTON',
-  };
+export function getMySql(data) {
+  console.log('Data = ', data);
+  let jsonData = JSON.stringify(data);
+  console.log('jsonData = ', jsonData);
 
-  var body = '';
-  for (var key in data) {
-    // добавление поля
-    body = body + key + '=' + data[key] + '&';
-  }
-
-  let ArrReq = {
-    MyUser: "ANTON",
-    TypeReq: "POST",
-    ModReq: "SELECT",
-  };
-  let body = 'typereq=' + encodeURIComponent(ArrReq.TypeReq) + '&modreq=' + encodeURIComponent(ArrReq.ModReq) + '&myuser=' + encodeURIComponent(ArrReq.MyUser);
+  let body = 'my_json=' + encodeURIComponent(jsonData);
 
   let xhr_temper = new XMLHttpRequest(); // 1. Создаём новый XMLHttpRequest-объект
   xhr_temper.open('POST', 'http://f0659051.xsph.ru/api/mysqlapi.php');																									// 2. Настраиваем его: GET-запрос по URL /article/.../load
