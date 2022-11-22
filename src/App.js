@@ -37,9 +37,10 @@ function App() {
     setModal(false);
   }
 
-    var data = {
-    name: 'Виктор',
-    surname: 'Цой',
+  var data = {
+    type: 'SELECT',
+    query: "SELECT * FROM `temperatura` ORDER BY `temperatura`.`id` DESC LIMIT 10",
+    //query: 'SELECT * FROM zakaz',
     myuser: 'ANTON',
   };
 
